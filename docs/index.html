@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div id="app">
+    <v-app>
+      <v-content>
+        <v-toolbar>
+            <v-toolbar-side-icon></v-toolbar-side-icon>
+            <v-toolbar-title>БАРТОВЫ</v-toolbar-title>
+            <v-spacer></v-spacer>
+        </v-toolbar>
+        <v-flex>
+            <v-btn depressed large color="primary">
+                    Upload
+                <v-icon right dark>cloud_upload</v-icon>
+            </v-btn>
+        </v-flex>
+      </v-content>
+    </v-app>
+  </div>
+ 
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+  <script>
+    new Vue({ 
+        el: '#app',
+        data: {
+            message: 'всем привет'
+        }
+         })
+  </script>
+</body>
+</html>
